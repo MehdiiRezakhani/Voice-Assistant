@@ -19,14 +19,18 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <div className="logoBox">
+      <a 
+        className="logoBox"
+        href="https://memoryto.com/"
+        target="_blank"
+      >
         <Image 
           src={Logo} 
           alt="Memoryto Logo" 
           width={50}
           height={25}
         />
-      </div>
+      </a>
       <div className="container">
         <h1>Voice Assistant Simulator</h1>
         <div>

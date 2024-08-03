@@ -39,7 +39,7 @@ label {
 .loader {
   border: 0.5rem solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
-  border-top: 0.5rem solid #3498db;
+  border-top: 0.5rem solid white;
   width: 3rem;
   height: 3rem;
   animation: spin 1s linear infinite;
@@ -82,11 +82,11 @@ label {
   }
 }
 .logoBox {
+  display: block;
   position: absolute;
   top: 50px;
   left: 50px;
 }
-
 
 .container {
   width: 100%;
