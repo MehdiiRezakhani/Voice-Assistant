@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; 
+  position: relative;
+  text-align: center;
+  padding: 5px;
+
+}
+
+.input {
+  visibility: hidden;
+}
+.button {
+  background-color: transparent;
+  border: none;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border: 0.5rem solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 0.5rem solid #3498db;
+  width: 3rem;
+  height: 3rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.recording-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.blink {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: white;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.logoBox {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 2rem;
+  text-align: center;
+  overflow: auto;
+  background-image: linear-gradient(to bottom, #175CD3 , #7283FF);
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.container h1 {
+  color:white;
+  text-align: center;
+  font-size: 40px;
+}
+
+.radioButtonsContainer {
+  display: flex;
+  gap:10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.radioButtonsContainer p{
+  color:white;
+  font-size: 20px;
+}
+.radioButtons {
+  display: flex;
+  justify-items: center;
+  /* border:1px blue solid; */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.radioButtons label {
+  color: white;
+  width: 100%;
+}
+.responseContainer {
+  margin-top: 2rem;
+}
+
+.author {
+  color: white;
+  text-align: center;
+}
+.author a{
+  text-decoration: underline;
+  color: white !important;
+}
